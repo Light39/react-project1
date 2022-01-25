@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+const myHouse={
+  color: 'White',
+  etage: '4th',
+};
+
+function getTitle1(titlee){
+  return titlee;
+
+}
+
+function App(){
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1> In here it's called {getTitle1('Reactdd')}</h1>
+      <h2>Hello, my house is {myHouse.color}, in the {myHouse.etage} floor</h2>
+
+
+      <label htmlFor="search"> Search For House: </label>
+      <input id="search" type="text"></input>
+
+
+
+
     </div>
   );
 }
